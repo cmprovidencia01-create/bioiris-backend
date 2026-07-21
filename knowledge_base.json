@@ -1,0 +1,136 @@
+{
+  "zones": [
+    {
+      "name": "Cerebro / Sistema Nervioso",
+      "hours": "11:00 - 1:00",
+      "start_angle": 60,
+      "end_angle": 120,
+      "organ": "Corteza Cerebral, Cerebelo y Sistema Nervioso Central",
+      "conflict_nmg": "Conflicto de sobrecarga intelectual, preocupación existencial en el territorio o estrés crónico.",
+      "conflict_details": "Se relaciona con tensiones mentales constantes, miedo a perder el control y agotamiento de la energía nerviosa.",
+      "products_pronago": ["DS30N TÓNICO CERO STRESS", "ASHWAGANDHA", "GINKGO BILOBA"],
+      "layman_explanation": "El área superior del iris refleja el estado del sistema nervioso. Los signos aquí indican estrés mental, cansancio acumulado e insomnio, lo cual desgasta la energía de otros órganos."
+    },
+    {
+      "name": "Garganta / Cuello / Tiroides",
+      "hours": "1:00 - 2:00",
+      "start_angle": 30,
+      "end_angle": 60,
+      "organ": "Oído, Garganta, Amígdalas, Glándula Tiroides",
+      "conflict_nmg": "Conflicto de 'no poder atrapar el bocado' (tiempo insuficiente para lograr algo) o de no poder expresarse libremente.",
+      "conflict_details": "En la tiroides se relaciona con el afán de velocidad ('tengo que actuar rápido para atrapar la presa'). En fase activa estimula la glándula y en curación genera inflamación.",
+      "products_pronago": ["ALOE VERA ORGÁNICO", "DRENABIL", "CITRATO DE MAGNESIO"],
+      "layman_explanation": "Ubicada en el sector superior derecho. Refleja la comunicación, la garganta y la tiroides, vinculándose al ritmo metabólico y a la sensación de no avanzar suficientemente rápido."
+    },
+    {
+      "name": "Pulmón / Bronquios (Zona Superior)",
+      "hours": "2:00 - 3:00",
+      "start_angle": 0,
+      "end_angle": 30,
+      "organ": "Lóbulo superior del Pulmón y Bronquios",
+      "conflict_nmg": "Conflicto de amenaza de territorio o miedo de muerte (amenaza extrema a la propia existencia).",
+      "conflict_details": "Provoca ulceración de los bronquios en fase activa para ampliar el paso de aire, y tos con expectoración en fase de reparación.",
+      "products_pronago": ["PROPO LUZ", "AJO Y PEREJIL CON CLOROFILA", "VITAMINA C PLUS"],
+      "layman_explanation": "Refleja la respiración y los pulmones. Los signos en esta zona indican propensión a alergias respiratorias, congestión y tensiones emocionales asociadas con el miedo o la tristeza."
+    },
+    {
+      "name": "Corazón y Vías Cardiovasculares",
+      "hours": "3:00 - 4:00",
+      "start_angle": 330,
+      "end_angle": 360,
+      "organ": "Corazón (Ventriculos y Miocardio)",
+      "conflict_nmg": "Conflicto de pérdida de territorio (despido, ruina económica o separación que pone en riesgo el hogar).",
+      "conflict_details": "En fase activa genera necrosis celular silenciosa y en fase de reparación causa inflamación del miocardio (angina de pecho) con riesgo de arritmias transitorias.",
+      "products_pronago": ["CASTAÑO DE INDIAS", "OMEGA 3 PLUS EPA/DHA", "SEMILLA DE UVA CON GINKGO"],
+      "layman_explanation": "Esta zona está vinculada al miocardio y la circulación. Refleja sobrecargas físicas o emocionales intensas ligadas a la pérdida de control en el ámbito personal o laboral."
+    },
+    {
+      "name": "Hígado / Vesícula (Ojo Derecho)",
+      "hours": "4:00 - 5:00",
+      "start_angle": 300,
+      "end_angle": 330,
+      "organ": "Hígado y Conductos Biliares",
+      "conflict_nmg": "Conflicto de carencia extrema (miedo a morir de hambre, falta de sustento o dinero) o rencor territorial crónico.",
+      "conflict_details": "Causa proliferación celular en el parénquima hepático para absorber más nutrientes de forma eficiente durante la 'escasez'.",
+      "products_pronago": ["DRENABIL", "CARDO VIDA (CARDO MARIANO)"],
+      "layman_explanation": "Se asocia a la digestión de grasas y desintoxicación. Indica fatiga hepática, acumulación de toxinas o retención de enojos crónicos relacionados con la seguridad material."
+    },
+    {
+      "name": "Sistema Glandular / Endocrino",
+      "hours": "5:00 - 6:00",
+      "start_angle": 270,
+      "end_angle": 300,
+      "organ": "Glándulas Suprarrenales y Páncreas",
+      "conflict_nmg": "Conflicto de haber perdido el rumbo, tomar la decisión equivocada o haber elegido el camino incorrecto en la vida.",
+      "conflict_details": "En las suprarrenales provoca la disminución de cortisol en fase activa, lo que genera cansancio extremo, y picos de estrés en curación.",
+      "products_pronago": ["CITRATO DE MAGNESIO", "MACA ANDINA", "ASHWAGANDHA"],
+      "layman_explanation": "Esta zona regula la energía corporal y la respuesta al estrés. Los signos sugieren fatiga adrenal, niveles irregulares de azúcar y desequilibrios hormonales debido al estrés prolongado."
+    },
+    {
+      "name": "Sistema Renal / Riñones",
+      "hours": "6:00 - 7:00",
+      "start_angle": 240,
+      "end_angle": 270,
+      "organ": "Riñones (Túbulos Colectores)",
+      "conflict_nmg": "Conflicto de existencia, abandono o del prófugo (sentirse aislado, hospitalizado o luchando solo por la supervivencia).",
+      "conflict_details": "Produce retención de líquidos masiva en fase activa para 'conservar el agua' del cuerpo ante la crisis existencial.",
+      "products_pronago": ["RIÑO PRON", "CITRATO DE POTASIO", "DRENABIL"],
+      "layman_explanation": "Ubicada en la parte inferior del iris, representa la eliminación de agua y toxinas. Los signos sugieren retención de líquidos y congestión renal, a menudo ligada a la soledad o desarraigo."
+    },
+    {
+      "name": "Pelvis y Extremidades Inferiores",
+      "hours": "7:00 - 8:00",
+      "start_angle": 210,
+      "end_angle": 240,
+      "organ": "Cadera, Pelvis, Uretra y Piernas",
+      "conflict_nmg": "Conflicto de no poder moverse, sentirse atrapado en una situación o impedido de dar el siguiente paso.",
+      "conflict_details": "Afecta los tejidos óseos o articulares generando necrosis en fase activa y regeneración dolorosa (artritis/inflamación) en fase de curación.",
+      "products_pronago": ["COLÁGENO HIDROLIZADO", "CÚRCUMA CON PIMIENTA NEGRA", "CALCIO CON VITAMINA D"],
+      "layman_explanation": "Refleja la estructura de soporte y locomoción. Signos aquí pueden sugerir debilidad articular o muscular en las piernas y tensión acumulada por no poder salir de una situación indeseada."
+    },
+    {
+      "name": "Sistema Reproductor",
+      "hours": "8:00 - 9:00",
+      "start_angle": 180,
+      "end_angle": 210,
+      "organ": "Útero (Mujer) / Próstata (Hombre) / Ovarios y Testículos",
+      "conflict_nmg": "Conflicto semiorgánico de pérdida reproductiva (hijo, aborto) o conflicto sexual considerado 'sucio' o humillante.",
+      "conflict_details": "Suprime la función en fase activa y genera proliferación celular reparadora (quistes en ovarios o agrandamiento prostático) en fase de curación.",
+      "products_pronago": ["MACA ORGÁNICA", "SAW PALMETTO (Hombres)", "FENOGRECO"],
+      "layman_explanation": "Zona vinculada al aparato reproductor. Refleja tensiones hormonales, fatiga del sistema urogenital y emociones ligadas a pérdidas familiares o relaciones de pareja difíciles."
+    },
+    {
+      "name": "Sistema Pulmonar (Zona Media y Pleura)",
+      "hours": "9:00 - 10:00",
+      "start_angle": 150,
+      "end_angle": 180,
+      "organ": "Pleura y Lóbulos Medios del Pulmón",
+      "conflict_nmg": "Conflicto de ataque contra el pecho o tórax (miedo a un impacto físico o shock por diagnóstico grave de enfermedad).",
+      "conflict_details": "Genera engrosamiento de la pleura en fase activa y derrame pleural transitorio en fase de curación como proceso curativo.",
+      "products_pronago": ["AJO Y PEREJIL CON CLOROFILA", "PROPO LUZ"],
+      "layman_explanation": "Esta zona representa los pulmones y la protección del pecho. Se debilita ante agresiones externas o emociones extremas de ataque e indefensión."
+    },
+    {
+      "name": "Garganta / Esófago",
+      "hours": "10:00 - 11:00",
+      "start_angle": 120,
+      "end_angle": 150,
+      "organ": "Esófago, Laringe y Cuerdas Vocales",
+      "conflict_nmg": "Conflicto de susto imprevisto (laringe) o de no poder tragar un bocado o tragar una mala noticia (esófago).",
+      "conflict_details": "Provoca disfonía o parálisis transitoria en fase de curación y dificultad para deglutir en la fase activa del esófago.",
+      "products_pronago": ["ALOE VERA ORGÁNICO", "COLÁGENO HIDROLIZADO"],
+      "layman_explanation": "Representa el conducto digestivo superior y las cuerdas vocales. Signos en este sector indican propensión a irritación de garganta, acidez o tensiones al intentar 'tragar' situaciones difíciles."
+    },
+    {
+      "name": "Zona Gastrointestinal",
+      "hours": "Anillo Central (Alrededor de la pupila)",
+      "start_angle": 0,
+      "end_angle": 360,
+      "organ": "Estómago, Duodeno, Colon e Intestinos",
+      "conflict_nmg": "Conflicto de contrariedad indigesta (situación inaceptable que 'no se puede digerir', rencor familiar o laboral).",
+      "conflict_details": "Causa acidez o úlceras en el estómago en fase activa, y colitis, inflamación o dolores espasmódicos en fase de reparación.",
+      "products_pronago": ["ALOE VERA ORGÁNICO", "LACTOPRON PROBIÓTICO", "GAS3TE", "SIN P2 ENZIMAS DIGESTIVAS"],
+      "layman_explanation": "El área que rodea directamente a la pupila representa todo el tracto digestivo. Una coloración oscura o surcos radiales aquí indican colon irritable, estreñimiento o toxemia intestinal por digestiones incompletas."
+    }
+  ]
+}
