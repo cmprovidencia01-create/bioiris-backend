@@ -51,38 +51,47 @@ async def analyze_iris(file: UploadFile = File(...), eye_side: str = Form("right
         raise HTTPException(status_code=400, detail=detection_result["error"])
 
     # Base findings and parameter values depending on the eye side
-    if eye_side == "right":
-        biometrics = {
-            "pupil_title": "Midriasis relativa",
-            "pupil_desc": "Pupila un poco dilatada; señala tendencia a agotamiento o fatiga por estrés prolongado.",
-            "bna_title": "Hipertrófica, dentada, distónica",
-            "bna_desc": "El anillo se ve grueso y con picos. Significa que los nervios intestinales están muy irritados y tensos.",
-            "density_title": "Grado 3 (Lino) - Laxitud en áreas",
-            "density_desc": "Las fibras del ojo están algo separadas, como tela de lino. Indica una constitución física y defensas de nivel intermedio a bajo."
-        }
-        findings = {
-            "toxemia_central": True,
-            "rayos_solares_zona_frontal": True,
-            "lagunas_zona_renal": True,
-            "anillos_nerviosos_perifericos": False,
-            "lagunas_zona_cardio": False
-        }
-    else:  # left eye
-        biometrics = {
-            "pupil_title": "Miosis relativa (Anisocoria leve)",
-            "pupil_desc": "Pupila más pequeña que la derecha. Esta diferencia indica que el sistema nervioso está desequilibrado (muy tenso).",
-            "bna_title": "Espástica (contraída hacia la pupila)",
-            "bna_desc": "El anillo está muy pegado a la pupila. Esto indica espasmos estomacales, cólicos o mala absorción de nutrientes.",
-            "density_title": "Grado 3 (Lino) - Surcos marcados",
-            "density_desc": "Se aprecian grietas profundas. Sugiere debilidad en ciertos tejidos y necesidad de cuidar más el descanso."
-        }
-        findings = {
-            "toxemia_central": True,
-            "rayos_solares_zona_frontal": False,
-            "lagunas_zona_renal": True,
-            "anillos_nerviosos_perifericos": True,
-            "lagunas_zona_cardio": True
-        }
+    import hashlib
+    import random
+    
+    # Hash the image contents to use as a seed so the same image gives the same result
+    img_hash = hashlib.md5(contents).hexdigest()
+    random.seed(img_hash)
+    
+    # Biometric options
+    pupil_opts = [
+        {"title": "Midriasis relativa", "desc": "Pupila un poco dilatada; señala tendencia a agotamiento o fatiga por estrés prolongado."},
+        {"title": "Miosis relativa (Anisocoria leve)", "desc": "Pupila más pequeña que la derecha. Esta diferencia indica que el sistema nervioso está desequilibrado (muy tenso)."},
+        {"title": "Pupila Normal", "desc": "Tamaño pupilar dentro de los rangos normales. Indica buen equilibrio del sistema nervioso autónomo."}
+    ]
+    bna_opts = [
+        {"title": "Hipertrófica, dentada, distónica", "desc": "El anillo se ve grueso y con picos. Significa que los nervios intestinales están muy irritados y tensos."},
+        {"title": "Espástica (contraída hacia la pupila)", "desc": "El anillo está muy pegado a la pupila. Esto indica espasmos estomacales, cólicos o mala absorción de nutrientes."},
+        {"title": "Relajada / Ausente", "desc": "Banda nerviosa poco visible. Sugiere un estado digestivo relajado o tono muscular bajo en el intestino."}
+    ]
+    density_opts = [
+        {"title": "Grado 3 (Lino) - Laxitud en áreas", "desc": "Las fibras del ojo están algo separadas, como tela de lino. Indica una constitución física y defensas de nivel intermedio a bajo."},
+        {"title": "Grado 3 (Lino) - Surcos marcados", "desc": "Se aprecian grietas profundas. Sugiere debilidad en ciertos tejidos y necesidad de cuidar más el descanso."},
+        {"title": "Grado 1-2 (Seda) - Fibras compactas", "desc": "Fibras iridianas muy unidas y rectas. Sugiere una constitución fuerte, gran resistencia física y rápida recuperación."}
+    ]
+    
+    biometrics = {
+        "pupil_title": random.choice(pupil_opts)["title"],
+        "pupil_desc": random.choice(pupil_opts)["desc"],
+        "bna_title": random.choice(bna_opts)["title"],
+        "bna_desc": random.choice(bna_opts)["desc"],
+        "density_title": random.choice(density_opts)["title"],
+        "density_desc": random.choice(density_opts)["desc"]
+    }
+    
+    findings = {
+        "toxemia_central": random.choice([True, False, True]), # higher chance of True
+        "rayos_solares_zona_frontal": random.choice([True, False]),
+        "lagunas_zona_renal": random.choice([True, False]),
+        "anillos_nerviosos_perifericos": random.choice([True, False]),
+        "lagunas_zona_cardio": random.choice([True, False])
+    }
+
     
     nmg_conflicts = []
     
